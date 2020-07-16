@@ -46,4 +46,8 @@ Then select and open ```Lab09LINQInManhattan.sln```
 ---
 
 ### Change Log
+- 1.4: Challenge 2 Complete
+- 1.3: Challenge 1 Complete 
+- 1.2: JSON read
+- 1.1: Classes setup
 - 1.0: Initial Repo Setup

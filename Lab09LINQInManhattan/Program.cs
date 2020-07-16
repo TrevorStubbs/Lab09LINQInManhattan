@@ -21,10 +21,10 @@ namespace Lab09LINQInManhattan
 
             // 1. Output all of the neighborhoods in this data list(Final Total: 147 neighborhoods)
             var query = from Neighborhood in queryableObject
-                        select Neighborhood;                      
+                        select Neighborhood;
 
             int counter = 1;
-            foreach(var item in query)
+            foreach (var item in query)
             {
                 Console.WriteLine($"{counter++}. {item.Properties.Neighborhood}");
             }
@@ -33,10 +33,10 @@ namespace Lab09LINQInManhattan
             Console.ReadLine();
 
             // 2. Filter out all the neighborhoods that do not have any names (Final Total: 143)
-            var challenge2 = queryableObject.Where(hood => hood.Properties.Neighborhood.Length > 0);
+            var challenge2 = query.Where(hood => hood.Properties.Neighborhood.Length > 0);
 
             counter = 1;
-            foreach(var item in challenge2)
+            foreach (var item in challenge2)
             {
                 Console.WriteLine($"{counter++}. {item.Properties.Neighborhood}");
             }
@@ -45,6 +45,16 @@ namespace Lab09LINQInManhattan
             Console.ReadLine();
 
             // 3. Remove the duplicates (Final Total: 39 neighborhoods)
+            var challenge3 = challenge2.Select(x => x.Properties.Neighborhood).Distinct();               
+
+            counter = 1;
+            foreach (var item in challenge3)
+            {
+                Console.WriteLine($"{counter++}. {item}");
+            }
+
+            // 4. Rewrite the queries from above and consolidate all into one single query.
+            var challenge4 = queryableObject;
 
 
 

@@ -53,8 +53,23 @@ namespace Lab09LINQInManhattan
                 Console.WriteLine($"{counter++}. {item}");
             }
 
+            Console.WriteLine("Press Enter To Continue");
+            Console.ReadLine();
+
             // 4. Rewrite the queries from above and consolidate all into one single query.
-            var challenge4 = queryableObject;
+            var challenge4 = queryableObject.Where(hood => hood.Properties.Neighborhood.Length > 0)
+                                            .Select(x => x.Properties.Neighborhood).Distinct();
+
+            counter = 1;
+            foreach (var item in challenge4)
+            {
+                Console.WriteLine($"{counter++}. {item}");
+            }
+
+            Console.WriteLine("Press Enter To Continue");
+            Console.ReadLine();
+
+            // 5. Rewrite at least one of these questions only using the opposing method (example: Use LINQ Query statements instead of LINQ method calls and vice versa.)
 
 
 

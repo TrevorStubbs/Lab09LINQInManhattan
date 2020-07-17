@@ -38,7 +38,7 @@ Then select and open ```Lab09LINQInManhattan.sln```
 #### Application Start
 ![Start](images/Lab09Start.png)
 #### Using the Application
-![Middle](images/Lab09Mid.png)
+![Middle](images/Lab09mid.png)
 #### Application End
 ![Finished](images/Lab09Fin.png)
 

@@ -36,18 +36,28 @@ Then select and open ```Lab09LINQInManhattan.sln```
 
 ### Visuals
 #### Application Start
-![Start](images/Lab03Start.png)
+![Start](images/Lab09Start.png)
 #### Using the Application
-![Middle](images/Lab03Mid.png)
+![Middle](images/Lab09Mid.png)
 #### Application End
-![Finished](images/Lab03Fin.png)
+![Finished](images/Lab09Fin.png)
 
 
 ---
 
 ### Change Log
+- 1.8: README and Comments
+- 1.7: Challenge 5 Complete
+- 1.6: Challenge 4 Complete
+- 1.5: Challenge 3 Complete
 - 1.4: Challenge 2 Complete
 - 1.3: Challenge 1 Complete 
 - 1.2: JSON read
 - 1.1: Classes setup
 - 1.0: Initial Repo Setup
+
+---
+
+### References
+- https://json2csharp.com/
+    - was used to generate C# objects based off of the JSON data. 

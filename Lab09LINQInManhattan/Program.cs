@@ -10,9 +10,13 @@ namespace Lab09LINQInManhattan
 {
     class Program
     {
+        /// <summary>
+        /// This is the insertion into the whole app
+        /// </summary>
+        /// <param name="args">Takes a string array param</param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Kyungrae!");
             string fileFromData = GetJsonStream();
 
             Root deserilazedClass = JsonConvert.DeserializeObject<Root>(fileFromData);
@@ -70,12 +74,25 @@ namespace Lab09LINQInManhattan
             Console.ReadLine();
 
             // 5. Rewrite at least one of these questions only using the opposing method (example: Use LINQ Query statements instead of LINQ method calls and vice versa.)
+            var challenge5 = from Neighborhood in queryableObject
+                             where Neighborhood.Properties.Neighborhood.Length > 0
+                             select Neighborhood.Properties.Neighborhood;
 
+            counter = 1;
+            foreach (var item in challenge5)
+            {
+                Console.WriteLine($"{counter++}. {item}");
+            }
+            Console.WriteLine("Thank you for playing");
 
 
 
         }
 
+        /// <summary>
+        /// Helper method to get the JSON file into the app
+        /// </summary>
+        /// <returns>returns a string</returns>
         static string GetJsonStream()
         {
             try

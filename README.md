@@ -42,7 +42,6 @@ Then select and open ```Lab09LINQInManhattan.sln```
 #### Application End
 ![Finished](images/Lab09Fin.png)
 
-
 ---
 
 ### Change Log
